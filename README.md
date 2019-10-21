@@ -66,3 +66,9 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+### 遇到的问题
+
+安装antd 的按需加载不成功 参考 https://segmentfault.com/a/1190000016430794
+安装依赖   babel-plugin-import --dev
