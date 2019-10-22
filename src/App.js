@@ -1,3 +1,53 @@
+
+import React from 'react'
+import { Route, Switch } from 'react-router-dom';
+import Login from './router/Login';
+import FirstPage from './router/FirstPage';
+import Add from './router/FirstPage/AddProject';
+
+import Header from './layouts/Header';
+import 'antd/dist/antd.css';
+
+class App extends React.Component {
+
+  render() {
+    return (
+      <div>
+        <Header />
+        <Switch>
+          <Route path="/" exact component={Login} />
+          <Route path="/first" exact component={FirstPage}></Route>
+          <Route path="/login" exact component={Login}></Route>
+          <Route path="/first/add" exact component={Add}></Route>
+        </Switch>
+      </div>
+    )
+  }
+}
+
+export default App
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // import React from 'react';
 // // import logo from './logo.svg';
 // import style from './App.less';
@@ -29,23 +79,3 @@
 // }
 
 // export default App;
-
-
-import React from 'react'
-import { Route } from 'react-router-dom'
-
-import Login from './container/login'
-import Register from './container/register'
-
-class App extends React.Component {
-  render() {
-    return (
-      <div>
-        <Route path="/Register" component={Register}></Route>
-        <Route path="/login" component={Login}></Route>
-      </div>
-    )
-  }
-}
-
-export default App
