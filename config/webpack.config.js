@@ -424,8 +424,8 @@ module.exports = function (webpackEnv) {
                 ],
                 plugins: ['@babel/transform-runtime', ['import', {
                   libraryName: 'antd',
-                  libraryDirectory: "es",
-                  style: 'css',
+                  // libraryDirectory: "es",
+                  style: 'true',
                 }]],
                 cacheDirectory: true,
 
